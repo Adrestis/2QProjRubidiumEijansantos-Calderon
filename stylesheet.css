@@ -1,0 +1,99 @@
+* {box-sizing: border-box}
+body {
+	padding: 0px;
+	background-color: #fef5d9;
+	}
+
+@font-face{
+	font-family: "NavigationBar";
+	src: url(OpenSans-Bold.ttf);
+}
+
+@font-face{
+	font-family: "OverviewHeader";
+ 	src: url(Archivo-Bold.ttf);
+}
+  
+@font-face{
+	font-family: "OtherHeaders";
+	src: url(DMSans-Bold.ttf);
+}
+
+@font-face{
+	font-family: "NormalText";
+	src: url(DMSans-Regular.ttf);
+}
+
+p, a, li{
+	font-family: "Others";
+}
+
+.navbar {
+  width: 100%;
+  height: 75px;
+  background-color: #D9CFB3;
+  border: 10px solid gray;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: #545454;
+  text-decoration: none;
+  font-size: 17px;
+  width: 20%; /* Four links of equal widths */
+  height: 100%;
+  text-align: center;
+  font-family: "NavigationBar";
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.navbar a.active {
+  text-decoration: underline;
+}
+
+.navbar a img {
+	max-height: 100%;
+	height: auto;
+	width: auto;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+h1 {
+	text-align: center;
+	font-family: "OverviewHeader";
+	}
+
+h2,h3,h4,h5{
+	font-family: "OtherHeaders";
+}
+
+p,caption {
+	font-family: "NormalText";
+}
+
+.tableofcontents{
+    background-color: rgb(54, 64, 104);
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    font-family: "NormalText";
+    color: black;
+	background-color: #D9CFB3;
+	border: 10px solid gray;
+    align-content: center;
+    position: relative;
+    float: right;
+}
